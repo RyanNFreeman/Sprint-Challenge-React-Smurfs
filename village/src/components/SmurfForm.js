@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import '../App.css'
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -11,7 +12,6 @@ class SmurfForm extends Component {
         height: ''}
     };
   }
-  
 
   addSmurf = e => {
     let smurfs = {
@@ -66,7 +66,7 @@ class SmurfForm extends Component {
             value={this.state.smurf.height}
             name="height"
           />
-          <button type="submit">Add to the village</button>
+          <button type="submit">Add</button>
         </form>
       </div>
     );
